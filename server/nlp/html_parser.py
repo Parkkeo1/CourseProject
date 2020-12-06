@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import re
 
 def get_relevant_html_tags(relevant_classes, soup):
     def is_any_class_match(css_class):
@@ -7,11 +8,18 @@ def get_relevant_html_tags(relevant_classes, soup):
 
         # sdap, profile, field, links, research, etc
         class_tokens =  set(re.split(r'\s|-', css_class.lower()))
-        return len(class_tokens.intersection(key_classes_set)) > 0
+        return len(class_tokens.intersection(relevant_classes)) > 0
 
     matches = []
     for match in soup.find_all(class_=is_any_class_match):
-        matches = [m for m in matches if match not in m.descendants]
+        # THE NO PARENTS METHOD
+        # matches = [m for m in matches if match not in m.descendants]
+        # matches.append(match)
+
+        # THE NO CHILDREN OF PARENTS ALREADY MATCHED METHOD
+        if any(match in m.descendants for m in matches):
+            # child of already found element
+            continue
         matches.append(match)
 
     return matches

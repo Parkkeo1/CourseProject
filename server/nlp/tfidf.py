@@ -38,4 +38,7 @@ def calculate_tfidf_for_new_doc(sp_tokenized_doc, trained_tfidf_vocab):
 
     # TODO test with both transform() and fit_transform()
     tfidf_matrix = tfidf_vectorizer.fit_transform([sp_tokenized_doc])
-    return tfidf_matrix
+
+    df = pd.DataFrame(tfidf_matrix[0].T.todense(), index=tfidf_vectorizer.get_feature_names(), columns=["TF-IDF"])
+    df = df.sort_values('TF-IDF', ascending=False)
+    return df.head(20)
