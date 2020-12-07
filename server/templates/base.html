@@ -1,12 +1,14 @@
 <html>
-    <head>
-        <title>CS 410 Project - Keon Park</title>
-    </head>
-    <body>
-        <div>
-          <a href="/">Home</a>
-        </div>
-        <hr>
-        {% block content %}{% endblock %}
-    </body>
+  <head>
+    <link rel="stylesheet" href="{{ url_for("static", filename="main.css") }}">
+    <title>CS 410 Project - Keon Park</title>
+  </head>
+  <body>
+    <div class="home-links">
+      <a href="/">Home</a>
+      <a target="_blank" href="https://github.com/Parkkeo1/CourseProject">Github</a>
+    </div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
 </html>

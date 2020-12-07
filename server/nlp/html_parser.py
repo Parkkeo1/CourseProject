@@ -29,8 +29,3 @@ def extract_text_from_tags(tags):
     utf8_page_text = page_text.encode("ascii", errors="ignore").decode("utf-8")
     cleaned_page_text = re.sub("\s+", " ", utf8_page_text).strip()
     return cleaned_page_text
-
-def extract_text_from_matching_tags(matching_classes, tags):
-    # TODO
-    matched_tags = []
-    return extract_text_from_tags(matched_tags)
