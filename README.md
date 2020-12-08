@@ -11,11 +11,18 @@ The link to the tutorial video for this project is [here](). The video is a brie
 
 ### Overview
 
+As previously mentioned, this project is a standalone extension of the *ExpertSearch* system that provides improved NLP features to better analyze text in faculty web pages. In its current implementation, *ExpertSearch* only extracts the name and email of the faculty member from the page, limiting its use as a tool for users seeking more in-depth overviews of faculty members and their biographies. As a result, this project was developed with more advanced text retrieval and mining features to automatically provide users with a useful "snapshot" of faculty page content.
+
+It accomplishes this by scraping, processing, and analyzing text data from faculty pages via URLs entered by the user using BeautifulSoup, spaCy, scikit-learn, and pre-trained TF-IDF and LDA models (available as `.pkl` files in the `server/data` directory) to automatically extract/calculate relevant keywords, named entities, and topics. For example, here is a screenshot of the system's results for UIUC Professor [Tarek Abdelzaher](https://cs.illinois.edu/about/people/all-faculty/zaher):
+
+![Screenshot]()
+
+
 ### Implementation
 
 ### Local Setup
 
-These instructions assume the user is already knowledgeable of git and Python environments and has Python 3 (note: 3.7 was used during development) with pip installed.
+These instructions assume the user is already knowledgeable of `git` and `Python` environments and has `Python 3` (note: 3.7 was used during development) with `pip` installed.
 
 1. Clone this repository
 
