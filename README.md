@@ -13,13 +13,44 @@ The link to the tutorial video for this project is [here](). The video is a brie
 
 As previously mentioned, this project is a standalone extension of the *ExpertSearch* system that provides improved NLP features to better analyze text in faculty web pages. In its current implementation, *ExpertSearch* only extracts the name and email of the faculty member from the page, limiting its use as a tool for users seeking more in-depth overviews of faculty members and their biographies. As a result, this project was developed with more advanced text retrieval and mining features to automatically provide users with a useful "snapshot" of faculty page content.
 
-It accomplishes this by scraping, processing, and analyzing text data from faculty pages via URLs entered by the user using BeautifulSoup, spaCy, scikit-learn, and pre-trained TF-IDF and LDA models (available as `.pkl` files in the `server/data` directory) to automatically extract/calculate relevant keywords, named entities, and topics. For example, here is a screenshot of the system's results for UIUC Professor [Tarek Abdelzaher](https://cs.illinois.edu/about/people/all-faculty/zaher):
+It accomplishes this by scraping, processing, and analyzing text data from faculty pages via URLs entered by the user using `BeautifulSoup`, `spaCy`, `scikit-learn`, and pre-trained TF-IDF and LDA models (available as `.pkl` files in the `server/data` directory) to automatically extract/calculate relevant keywords, named entities, and topics. For example, here is a screenshot of the system's results for UIUC Professor [Tarek Abdelzaher](https://cs.illinois.edu/about/people/all-faculty/zaher):
 
 ![Screenshot](https://raw.githubusercontent.com/Parkkeo1/CourseProject/main/project_example_image.PNG)
 
 As shown above, this software, like *ExpertSearch* includes the likely name and emails of the faculty member. It also provides detailed overviews of the system's calculated keywords, named entities, and topics with specific numbers to provide users with an effective "snapshot" of the page without visting it manually. For example, the user can deduce that Professor Abdelzaher is likely to be an engineering (likely CS or CompE, due to keywords like `system`, `transactions`, and `data`) research professor involved/related with the Institute of Electrical and Electronics Engineers (IEEE).
 
 ### Implementation
+
+This project/system is implemented as a Flask web application with a Python backend and HTML/CSS frontend. The code is organized like a standard Flask application, in the following directory structure (not all files shown):
+
+```
+CourseProject/
+│   README.md
+│   .gitignore
+|   ...
+└───server/
+    │   app.py
+    │   train.py
+    │   config.py
+    │   requirements.txt
+    └───data/
+        │   tfidf.pkl
+        |   uiuc_bios.txt
+        |   ...
+    └───nlp/
+        │   scraper.py
+        |   html_parser.py
+        |   tfidf_lda.py
+        |   ...
+    └───static/
+        │   main.css
+    └───templates/
+        │   base.html
+        |   ...
+```
+
+TODO
+
 
 ### Local Setup
 
