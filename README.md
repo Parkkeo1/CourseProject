@@ -93,6 +93,7 @@ cd CourseProject
 python -m venv venv
 source venv/Scripts/activate
 pip install -r server/requirements.txt
+python -m spacy download en_core_web_lg
 ```
 
 3. Launch the software.
