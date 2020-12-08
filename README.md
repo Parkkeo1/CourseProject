@@ -1,5 +1,4 @@
 # Keon Park - CS 410 CourseProject
----
 **Extracting relevant information from faculty bios**
 
 This repository contains the source code, data, and documentation for Keon (Isaac) Park's final project for CS 410 Fall 2020 at UIUC. This project is an extension/spin-off of the ExpertSearch system that seeks to build upon ExpertSearch's NLP features by extracting not only names and emails from faculty pages but also keywords, named entities, and topics  in order to provide users with a more comprehensive overview without having to manually visit the page.
