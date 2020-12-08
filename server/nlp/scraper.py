@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 
-# uses webdriver object to execute javascript code and get dynamically loaded webcontent
 def scrape_url(url, driver):
     driver.get(url)
     res_html = driver.execute_script("return document.body.innerHTML")

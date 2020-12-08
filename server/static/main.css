@@ -1,9 +1,13 @@
+html, body {
+  font-family: sans-serif;
+}
+
 table {
   font-family: sans-serif;
   border-collapse: collapse;
   padding: 0;
   margin: 0 auto;
-  width: 75%;
+  width: 90%;
 }
 
 td, th {
@@ -34,4 +38,13 @@ div.home-links {
 
 div.home-links > * {
   margin-right: 4px;
+}
+
+.heading-content {
+  margin: 4px 0;
+}
+
+.heading-content > * {
+  margin: 0 auto;
+  display: inline-block;
 }

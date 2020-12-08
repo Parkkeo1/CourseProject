@@ -18,7 +18,6 @@ def get_relevant_html_tags(relevant_classes, soup):
 
         # THE NO CHILDREN OF PARENTS ALREADY MATCHED METHOD
         if any(match in m.descendants for m in matches):
-            # child of already found element
             continue
         matches.append(match)
 

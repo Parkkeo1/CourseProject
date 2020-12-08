@@ -1,19 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h2>Results for: {{ query_url }}</h2>
+  <div>
+    <h2>Results</h2>
+    <div class="heading-content">
+      <h4>Query URL: </h4>
+      <a href="{{ query_url }}">{{ query_url }}</a>
+    </div>
+    <div class="heading-content">
+      <h4>Likely Faculty Name: </h4>
+      <p>{{ likely_faculty_name }}</p>
+    </div>
+    <div class="heading-content">
+      <h4>Emails and Links: </h4>
+      <p>{{ emails_and_urls }}</p>
+    </div>
+  </div>
   <div class="row">
     <div class="column">
-      <h4>Keywords with TF-IDF</h4>
+      <h4>Top {{ tfidf_num_values }} Keywords with TF-IDF</h4>
       {{ tfidf | safe }}
     </div>
     <div class="column">
-      <h4>Named Entities with spaCy</h4>
-
+      <h4>Top {{ ner_num_values }} Named Entities with spaCy</h4>
+      {{ entities | safe }}
     </div>
     <div class="column">
-      <h4>Topics with LDA</h4>
-      
+      <h4>Top {{ lda_num_topics }} Topics with LDA</h4>
+      {{ lda | safe }}
     </div>
   </div>
 {% endblock %}
