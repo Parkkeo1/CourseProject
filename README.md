@@ -17,7 +17,7 @@ It accomplishes this by scraping, processing, and analyzing text data from facul
 
 ![Screenshot](https://raw.githubusercontent.com/Parkkeo1/CourseProject/main/project_example_image.PNG)
 
-As shown above, this software, like *ExpertSearch* includes the likely name and emails of the faculty member. It also provides detailed overviews of the system's calculated keywords, named entities, and topics with specific numbers to provide users with an effective "snapshot" of the page without visting it manually. For example, the user can deduce that Professor Abdelzaher is likely to be an engineering (likely CS or CompE, due to keywords like `system`, `transactions`, and `data`) professor involved/related with the Institute of Electrical and Electronics Engineers (IEEE).
+As shown above, this software, like *ExpertSearch* includes the likely name and emails of the faculty member. It also provides detailed overviews of the system's calculated keywords, named entities, and topics with specific numbers to provide users with an effective "snapshot" of the page without visting it manually. For example, the user can deduce that Professor Abdelzaher is likely to be an engineering (likely CS or CompE, due to keywords like `system`, `transactions`, and `data`) research professor involved/related with the Institute of Electrical and Electronics Engineers (IEEE).
 
 ### Implementation
 
