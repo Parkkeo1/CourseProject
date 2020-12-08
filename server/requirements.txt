@@ -10,8 +10,6 @@ configparser==5.0.1
 crayons==0.4.0
 cymem==2.0.4
 decorator==4.4.2
-en-core-web-lg==2.3.1
-en-core-web-md==2.3.1
 Flask==1.1.2
 Flask-WTF==0.14.3
 idna==2.10
