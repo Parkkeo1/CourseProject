@@ -5,9 +5,9 @@ This repository contains the source code, data, and documentation for Keon (Isaa
 
 This project was an individual effort by Keon (Isaac) Park.
 
-### Software Usage Tutorial Presentation
+### Software Usage Tutorial [Video](https://www.youtube.com/watch?v=ry0-Qep3GfI)
 
-The link to the tutorial video for this project is [here](). The video is a brief explanation of how to locally install/run and use the project code, including a example use case. The rest of this README document also provides details regarding this software's functionality and implementation.
+The link to the tutorial video for this project is [here](https://www.youtube.com/watch?v=ry0-Qep3GfI). The video is a brief explanation of how to locally install/run and use the project code, including a example use case. The rest of this README document also provides details regarding this software's functionality and implementation.
 
 ### Overview
 
